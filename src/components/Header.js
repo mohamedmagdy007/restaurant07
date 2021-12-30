@@ -15,7 +15,7 @@ export default function Header() {
           Enjoy Your Healthy Delicious Meal
         </p>
         <h1 className="text-3xl md:text-5xl">Treat Yourself</h1>
-        <p className="text-center  my-8">
+        <p className="text-center  px-1  my-8">
           Far far away, behind the word mountains, far from the countries
           Vokalia and Consonantia, there live the blind texts.
         </p>

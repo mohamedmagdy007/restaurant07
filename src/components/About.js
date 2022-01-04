@@ -12,6 +12,7 @@ export default function About() {
             <img
               src="./images/xparty_1.jpg"
               className="object-cover w-full rounded-md"
+              alt="party"
             />
           </div>
           <div>

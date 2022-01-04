@@ -35,13 +35,17 @@ export default function Cart() {
               <h5>subtotal</h5>
               <span></span>
             </div>
-            <div className="pt-3 grid grid-cols-[auto_1fr_1fr_auto] sm:grid-cols-[329px_1fr_1fr_1fr] md:grid-cols-[329px_1fr_1fr_1fr] gap-4 items-center">
-              {cartItems.map((item) => (
-                <>
+            <div className="">
+              {cartItems.map((item, index) => (
+                <div
+                  className="pt-3 grid grid-cols-[auto_1fr_1fr_auto] sm:grid-cols-[329px_1fr_1fr_1fr] md:grid-cols-[329px_1fr_1fr_1fr] gap-4 items-center"
+                  key={index}
+                >
                   <div className="flex flex-wrap items-center gap-2">
                     <img
                       src={`../images/${item.product.img}`}
                       className="object-cover w-32 rounded-md"
+                      alt={item.product.img}
                     />
                     <p className="font-bold text-sm md:text-base">
                       {item.product.name}
@@ -64,7 +68,7 @@ export default function Cart() {
                       <ImBin className="text-white" />
                     </div>
                   </div>
-                </>
+                </div>
               ))}
             </div>
           </>

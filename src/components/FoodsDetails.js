@@ -12,10 +12,10 @@ export default function FoodsDetails(props) {
   const [food, setFood] = useState();
   const [qty, setQty] = useState(1);
   const dispatch = useDispatch();
-  useEffect(async () => {
-    const filteredData = foods.filter((item) => item.id == id);
+  useEffect(() => {
+    let filteredData = foods.filter((item) => item.id === id);
     setFood(filteredData);
-  }, [setFood]);
+  }, [id]);
   const image = [
     "ximg_2_n.jpg",
     "ximg_3_b.jpg",

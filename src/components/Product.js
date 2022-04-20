@@ -56,17 +56,15 @@ export default function Product() {
             <div className="grid grid-cols-2 grid-rows-2 gap-3 col-span-2">
               {menuItem?.map((item) => (
                 <div key={item.id}>
-                  <Slide bottom>
-                    <Link to={`./food/${item.id}`}>
-                      <div className="overflow-hidden rounded-md">
-                        <img
-                          className="img-foods"
-                          src={`./images/${item.img}`}
-                          alt={`./images/${item.img}`}
-                        />
-                      </div>
-                    </Link>
-                  </Slide>
+                  <Link to={`./food/${item.id}`}>
+                    <div className="overflow-hidden rounded-md">
+                      <img
+                        className="img-foods"
+                        src={`./images/${item.img}`}
+                        alt={`./images/${item.img}`}
+                      />
+                    </div>
+                  </Link>
                   <p className="my-2 text-xl">{item.name}</p>
                   <p className="text-orange-600">{item.price}</p>
                 </div>
